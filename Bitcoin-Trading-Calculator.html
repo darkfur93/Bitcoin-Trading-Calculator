@@ -1,0 +1,13 @@
+<script language="Javascript">function Calc(myform){var enternumber1=document.myform.number1.value;var enternumber1=parseFloat(enternumber1,10);if(isNaN(enternumber1)||(enternumber1<0)){alert(" Enter a valid number! ");document.myform.number1.value="";document.myform.number1.focus();}
+else{var enternumber2=document.myform.number2.value;var enternumber2=parseFloat(enternumber2,10);if(isNaN(enternumber2)||(enternumber2<0)){alert(" Enter a valid number! ");document.myform.number2.value="";document.myform.number2.focus();}
+else
+document.myform.number3.value=enternumber1/enternumber2;}}</script>
+<form name="myform"><br>
+<b>Amount of dollars being traded for Bitcoin:</b> <input name="number1" size="" maxlength="" type="text"><br><br>
+<b>Current price of Bitcoin:</b> <input name="number2" size="" maxlength="" type="text"><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input name="button" value="Calculate" onclick="Calc(myform)" type="button">
+&nbsp;&nbsp;<input name="Reset" type="Reset">
+<br><br>
+<b>Amount of Bitcoin in exchange of dollars:</b>&nbsp;&nbsp;<input name="number3" size="" maxlength="" value="" type="text">
+
+</form>
